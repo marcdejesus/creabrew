@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { PlusIcon, MinusIcon } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 import {
   Accordion,
   AccordionContent,
@@ -76,45 +73,5 @@ export function FAQ() {
         </div>
       </div>
     </section>
-  );
-}
-
-function FAQItem({ 
-  question, 
-  answer, 
-  isLast 
-}: { 
-  question: string; 
-  answer: string; 
-  isLast: boolean 
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="w-full">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between py-4 text-left font-medium transition-all hover:text-primary"
-      >
-        <span className="text-base md:text-lg">{question}</span>
-        <div className="ml-2 shrink-0 rounded-full p-1.5 bg-muted-foreground/10 text-primary">
-          {isOpen ? (
-            <MinusIcon className="h-4 w-4" />
-          ) : (
-            <PlusIcon className="h-4 w-4" />
-          )}
-        </div>
-      </button>
-      <div
-        className={`grid overflow-hidden transition-all ${
-          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
-      >
-        <div className="overflow-hidden">
-          <p className="pb-4 pt-2 text-muted-foreground">{answer}</p>
-        </div>
-      </div>
-      {!isLast && <Separator />}
-    </div>
   );
 } 

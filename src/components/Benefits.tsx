@@ -9,7 +9,7 @@ const benefits = [
   },
   {
     title: "Improved Mental Focus",
-    description: "Our blend combines the cognitive benefits of caffeine with creatine's support for brain function.",
+    description: "Our blend combines the cognitive benefits of caffeine with creatine&apos;s support for brain function.",
     icon: Brain,
   },
   {
@@ -47,7 +47,7 @@ export function Benefits() {
               Performance Benefits in Every Cup
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              We've combined the best of both worlds: premium coffee and performance-enhancing creatine.
+              We&apos;ve combined the best of both worlds: premium coffee and performance-enhancing creatine.
             </p>
           </div>
         </div>

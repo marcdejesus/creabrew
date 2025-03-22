@@ -38,7 +38,7 @@ export function Testimonials() {
               What Our Community Says
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Join thousands of satisfied customers who've experienced the Creabrew difference.
+              Join thousands of satisfied customers who&apos;ve experienced the Creabrew difference.
             </p>
           </div>
         </div>
