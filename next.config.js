@@ -8,6 +8,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: true,
+  experimental: {
+    esmExternals: false
+  }
 };
 
 module.exports = nextConfig; 
