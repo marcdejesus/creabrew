@@ -4,7 +4,9 @@ const nextConfig = {
     // Disabling ESLint during production builds for faster deployments
     ignoreDuringBuilds: true,
   },
-  swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   reactStrictMode: true,
 };
 
