@@ -8,12 +8,12 @@ export function Hero() {
       {/* Background pattern */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(#e5d6c6_1px,transparent_1px)] [background-size:16px_16px] opacity-70"></div>
       
-      {/* Coffee beans decoration */}
-      <div className="absolute top-20 right-4 md:right-20 opacity-10">
+      {/* Logo decoration */}
+      <div className="absolute top-56 right-[500px] md:right-[395px] opacity-100">
         <div className="relative h-40 w-40 md:h-64 md:w-64">
           <Image
-            src="/images/coffee-beans.png"
-            alt="Coffee beans decoration"
+            src="/logo.png"
+            alt="Creabrew logo decoration"
             fill
             className="object-contain"
           />
@@ -62,9 +62,6 @@ export function Hero() {
                     <span className="animate-steam absolute -top-8 left-1/2 h-6 w-1 rounded-full bg-primary/20"></span>
                     <span className="animate-steam absolute -top-8 left-1/3 h-6 w-1 rounded-full bg-primary/20" style={{ animationDelay: '0.4s' }}></span>
                     <span className="animate-steam absolute -top-8 left-2/3 h-6 w-1 rounded-full bg-primary/20" style={{ animationDelay: '0.8s' }}></span>
-                  </div>
-                  <div className="rounded-full bg-primary/10 p-4 mt-2">
-                    <p className="font-bold text-primary">MORE THAN COFFEE</p>
                   </div>
                 </div>
               </div>
