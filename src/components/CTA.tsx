@@ -42,9 +42,6 @@ export function CTA() {
                 <Button asChild size="lg" className="w-full">
                   <Link href="#shop">Shop Now</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="w-full">
-                  <Link href="#learn">Learn More</Link>
-                </Button>
               </div>
               <p className="text-xs text-muted-foreground">
                 Offer valid for new customers only. Expires soon.

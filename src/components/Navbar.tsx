@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, Coffee } from "lucide-react";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
@@ -10,7 +11,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 mr-4 lg:mr-8">
-          <Coffee className="h-6 w-6 text-primary" />
+          <div className="relative h-8 w-8">
+            <Image
+              src="/logo.png"
+              alt="Creabrew Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
           <span className="font-bold text-xl">Creabrew</span>
         </Link>
         <nav className="hidden md:flex gap-6 flex-1">
@@ -43,7 +52,14 @@ export function Navbar() {
           <SheetContent side="right" className="w-64 sm:w-80">
             <div className="flex flex-col h-full">
               <Link href="/" className="flex items-center gap-2 py-4">
-                <Coffee className="h-5 w-5 text-primary" />
+                <div className="relative h-6 w-6">
+                  <Image
+                    src="/logo.png"
+                    alt="Creabrew Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <span className="font-bold">Creabrew</span>
               </Link>
               <nav className="flex flex-col gap-4 flex-1 pt-4">

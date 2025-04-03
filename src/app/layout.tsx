@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "Creabrew | Premium Coffee with Creatine",
   description: "Premium coffee infused with creatine for improved performance, focus, and energy. Fuel your workouts and your day with Creabrew.",
   keywords: ["coffee", "creatine", "performance", "workout", "energy", "focus", "fitness", "supplement"],
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: { url: "/logo.png", sizes: "180x180", type: "image/png" },
+    shortcut: { url: "/icon.png" },
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
