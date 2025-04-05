@@ -33,7 +33,7 @@ export function Hero() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg" className="font-medium">
-                <Link href="#shop">Shop Now</Link>
+                <Link href="/products">Shop Now</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="#benefits">Learn More</Link>

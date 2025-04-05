@@ -35,7 +35,7 @@ const products = [
 
 export function Products() {
   return (
-    <section id="products" className="py-16 md:py-24">
+    <section id="products" className="py-16 md:py-24 scroll-mt-16">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -70,7 +70,7 @@ export function Products() {
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <Button asChild className="w-full">
-                  <Link href="#shop">Add to Cart</Link>
+                  <Link href="/products">Add to Cart</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -78,7 +78,7 @@ export function Products() {
         </div>
         <div className="mt-12 flex justify-center">
           <Button asChild variant="outline" size="lg">
-            <Link href="#shop">View All Products</Link>
+            <Link href="/products">View All Products</Link>
           </Button>
         </div>
       </div>
